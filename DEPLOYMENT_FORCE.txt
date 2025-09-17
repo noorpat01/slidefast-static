@@ -1,0 +1,9 @@
+CRITICAL CACHE-BUSTING DEPLOYMENT
+=====================================
+
+Timestamp: 2025-09-18 01:44:00
+Issue: Production serving old buggy JavaScript file index-CGvF5kFq.js
+Fix: Deploying correct fixed file index-DAF3fZSv.js
+Cache-Control: Disabled for all assets to force fresh load
+
+This deployment forces Vercel to serve the correct JavaScript files with the null-safety bug fix.
