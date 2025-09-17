@@ -1,5 +1,5 @@
 {
-  "buildCommand": "echo 'URGENT CACHE-BUST DEPLOYMENT: JavaScript bug fix for slidefast.ai - Timestamp: 2025-09-18-01:44:00' && echo 'Fixed file: assets/index-DAF3fZSv.js' && ls -la assets/index-DAF3fZSv.js",
+  "buildCommand": "echo 'STABLE DEPLOYMENT: JavaScript bug fix applied - File: assets/index-DAF3fZSv.js' && ls -la assets/index-DAF3fZSv.js",
   "outputDirectory": ".",
   "framework": null,
   "public": false,
@@ -17,15 +17,7 @@
       "headers": [
         {
           "key": "Cache-Control",
-          "value": "no-cache, no-store, must-revalidate"
-        },
-        {
-          "key": "Pragma",
-          "value": "no-cache"
-        },
-        {
-          "key": "Expires",
-          "value": "0"
+          "value": "public, max-age=3600"
         }
       ]
     },
