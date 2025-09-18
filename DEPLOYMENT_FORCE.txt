@@ -1,9 +1,11 @@
-CRITICAL CACHE-BUSTING DEPLOYMENT
+CRITICAL CSP CACHE-BUSTING DEPLOYMENT
 =====================================
 
-Timestamp: 2025-09-18 01:44:00
-Issue: Production serving old buggy JavaScript file index-CGvF5kFq.js
-Fix: Deploying correct fixed file index-DAF3fZSv.js
-Cache-Control: Disabled for all assets to force fresh load
+Timestamp: 2025-09-19 01:21:32
+Issue: Browser/CDN serving cached CSP with wrong Supabase URL
+Previous: connect-src contains hbekiobfacrjaeskgtru.supabase.co
+Current: connect-src contains xhlpnnoskmewqkjriqxq.supabase.co (correct)
+Fix: Force complete cache invalidation for CSP headers
+Deploy ID: CACHE-BUST-CSP-001
 
-This deployment forces Vercel to serve the correct JavaScript files with the null-safety bug fix.
+This deployment forces Vercel and CDN to serve the correct CSP headers with the fixed Supabase URL.
